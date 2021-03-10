@@ -1,1 +1,11 @@
-<router-outlet></router-outlet>
+<div class="container-fluid">
+<app-toolbar></app-toolbar>
+    <mat-sidenav-container>
+        <mat-sidenav #sideNav mode="side">
+            <app-side-nav></app-side-nav>
+        </mat-sidenav>
+        <mat-sidenav-content>
+            <router-outlet></router-outlet>
+        </mat-sidenav-content>
+    </mat-sidenav-container>
+</div>

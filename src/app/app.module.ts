@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -10,6 +10,11 @@ import { TransferFundsComponent } from './transfer-funds/transfer-funds.componen
 import { DepositFundsComponent } from './deposit-funds/deposit-funds.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { OpenAccountComponent } from './open-account/open-account.component';
+import { SideNavComponent } from './side-nav/side-nav.component';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import {  MatToolbarModule } from '@angular/material/toolbar';
+import { ToolbarComponent } from './toolbar/toolbar.component';
+
 
 @NgModule({
   declarations: [
@@ -18,15 +23,22 @@ import { OpenAccountComponent } from './open-account/open-account.component';
     TransferFundsComponent,
     DepositFundsComponent,
     DashboardComponent,
-    OpenAccountComponent
+    OpenAccountComponent,
+    SideNavComponent,
+    ToolbarComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MatSliderModule
+    MatSliderModule,
+    MatSidenavModule,
+    MatToolbarModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  schemas: [
+    CUSTOM_ELEMENTS_SCHEMA
+  ]
 })
 export class AppModule { }

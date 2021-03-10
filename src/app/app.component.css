@@ -1,0 +1,20 @@
+.spinner-container {
+    position: fixed;
+    height: 300px;
+    width: 345px;
+    display: flex;
+    background: white;
+    margin-top: 70px;
+    opacity: 0.5;
+    justify-content: center;
+    position: fixed;
+    z-index: 999;
+    height: 2em;
+    width: 2em;
+    overflow: visible;
+    margin: auto;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+  }

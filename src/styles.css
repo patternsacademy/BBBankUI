@@ -1,4 +1,111 @@
-/* You can add global styles to this file, and also import other style files */
-
+@import 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css';
 html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #525f7f;
+    text-align: left;
+    background-color: #1e1e2f;
+  }
+  .mat-drawer-content {
+    overflow: hidden !important;
+  }
+  .mat-drawer-container {
+    background-color: #1e1e2f;
+    color: rgba(0,0,0,.87);
+  }
+  .mat-drawer {
+    background-color: #1e1e2f;
+    color: rgba(0,0,0,.87);
+  }
+  
+  /* Common button classes */
+  .btn-danger {
+    background: #fd5d93;
+    background-image: -webkit-linear-gradient(to bottom left, #fd5d93, #ec250d, #fd5d93);
+    background-image: -o-linear-gradient(to bottom left, #fd5d93, #ec250d, #fd5d93);
+    background-image: -moz-linear-gradient(to bottom left, #fd5d93, #ec250d, #fd5d93);
+    background-image: linear-gradient(to bottom left, #fd5d93, #ec250d, #fd5d93);
+    background-size: 210% 210%;
+    background-position: top right;
+    background-color: #fd5d93;
+    transition: all 0.15s ease;
+    box-shadow: none;
+    color: #ffffff;
+  }
+  .btn-danger.animation-on-hover:hover {
+    background-position: bottom left;
+    transition: 0.3s ease-in-out;
+  }
+  .btn-danger:hover, .btn-danger:focus, .btn-danger:active, .btn-danger:active:focus, .btn-danger:active:hover {
+    background-color: #ec250d !important;
+    background-image: linear-gradient(to bottom left, #fd5d93, #ec250d, #fd5d93) !important;
+    background-image: -webkit-linear-gradient(to bottom left, #fd5d93, #ec250d, #fd5d93) !important;
+    background-image: -o-linear-gradient(to bottom left, #fd5d93, #ec250d, #fd5d93) !important;
+    background-image: -moz-linear-gradient(to bottom left, #fd5d93, #ec250d, #fd5d93) !important;
+    color: #ffffff;
+    box-shadow: none;
+  }
+  .btn-danger:active {
+    box-shadow: none !important;
+    transform: translateY(1px) !important;
+    transition: all .15s ease;
+  }
+  .btn-danger:not([data-action]):hover {
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+    transform: translateY(-1px);
+    -webkit-transform: translateY(-1px);
+  }
+  .btn-cancel {
+    background: #939393;
+    background-image: -webkit-linear-gradient(to bottom left, #939393, #5e5e5e, #939393);
+    background-image: -o-linear-gradient(to bottom left, #939393, #5e5e5e, #939393);
+    background-image: -moz-linear-gradient(to bottom left, #939393, #5e5e5e, #939393);
+    background-image: linear-gradient(to bottom left, #939393, #5e5e5e, #939393);
+    background-size: 210% 210%;
+    background-position: top right;
+    background-color: #939393;
+    transition: all 0.15s ease;
+    box-shadow: none;
+    color: #ffffff;
+  }
+  .btn-cancel.animation-on-hover:hover {
+    background-position: bottom left;
+    transition: 0.3s ease-in-out;
+  }
+  .btn-cancel:hover, .btn-cancel:focus, .btn-cancel:active, .btn-cancel:active:focus, .btn-cancel:active:hover {
+    background-color: #5e5e5e !important;
+    background-image: linear-gradient(to bottom left, #939393, #5e5e5e, #939393) !important;
+    background-image: -webkit-linear-gradient(to bottom left, #939393, #5e5e5e, #939393) !important;
+    background-image: -o-linear-gradient(to bottom left, #939393, #5e5e5e, #939393) !important;
+    background-image: -moz-linear-gradient(to bottom left, #939393, #5e5e5e, #939393) !important;
+    color: #ffffff;
+    box-shadow: none;
+  }
+  .btn-cancel:active {
+    box-shadow: none !important;
+    transform: translateY(1px) !important;
+    transition: all .15s ease;
+  }
+  .btn-cancel:not([data-action]):hover {
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+    transform: translateY(-1px);
+    -webkit-transform: translateY(-1px);
+  }
+  
+  /* Custom scrollbar style */
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background: rgba(40, 40, 60, 1); 
+  }
+  ::-webkit-scrollbar-thumb {
+    background: rgba(102, 107, 122, .7); 
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgba(102, 107, 122, 1); 
+  }
